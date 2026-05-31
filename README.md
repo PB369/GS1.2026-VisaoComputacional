@@ -1,6 +1,7 @@
 # Global Solution 2026.1
 
 ## Visão Computacional Aplicada à Indústria Espacial
+
 ---
 
 ## Integrantes
@@ -33,6 +34,14 @@ Desenvolver e comparar duas arquiteturas de Redes Neurais Convolucionais treinad
 * Nuvens
 
 O objetivo é avaliar a viabilidade e o desempenho de diferentes arquiteturas de CNN para a classificação destas categorias e analisar o impacto das decisões arquiteturais nos resultados obtidos.
+
+---
+
+# Demonstração Funcional
+
+Segue o link para o vídeo de demonstração funcional:
+
+[https://www.youtube.com/watch?v=V-Qd_btoZtw](https://www.youtube.com/watch?v=V-Qd_btoZtw)
 
 ---
 
@@ -210,13 +219,8 @@ Durante o treinamento foram registrados:
 
 A avaliação foi realizada utilizando:
 
-## Accuracy
-
-Mede a proporção de classificações corretas.
-
-## Loss
-
-Mede o erro da função objetivo.
+* Accuracy | Mede a proporção de classificações corretas.
+* Loss | Mede o erro entre o dado previsto e o dado real.
 
 ## Matriz de Confusão
 
@@ -248,14 +252,6 @@ Foram comparados:
 * Comportamento durante as épocas
 
 A comparação permitiu avaliar como o aumento da profundidade da rede influenciou o desempenho e a capacidade de generalização.
-
----
-
-# Demonstração Funcional
-
-Segue o link para o vídeo de demonstração funcional:
-
-[https://www.youtube.com/watch?v=V-Qd_btoZtw](https://www.youtube.com/watch?v=V-Qd_btoZtw)
 
 ---
 
