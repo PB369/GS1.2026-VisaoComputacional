@@ -45,6 +45,23 @@ Segue o link para o vídeo de demonstração funcional:
 
 ---
 
+# Resultados Obtidos
+
+Ao realizarmos a execução do projeto, observamos que no conjunto de teste:
+
+* Modelo 1 atingiu 92,85% de acurácia e 30,65% de loss.
+* Modelo 2 atingiu 92,85% de acurácia e 23,89% de loss.
+
+Nossa equipe avalia que tais modelos sofreram propensão a Overfitting, pois comparando com os dados de validação e teste com imagens novas, a acurácia de ambos os modelos caiu e o loss aumentou.
+
+Como explicação para isso, concluiu-se que isso se deve muito ao dataset utilizado, que não possui grande quantidade de imagens. Também considerou-se que a disparidade dos resultados se deu pela grande semelhança entre imagens de núvens e fumaça, dificultando a compreensão real do modelo acerca do que consiste uma núvem e uma fumaça.
+
+Apesar de no conjunto de treino ambos os modelos terem tido a mesma acurácia, no conjunto de teste com novas imagens o M2 obteve uma acurácia maior do que o M1. Por causa disso, consideramos que o Modelo 2 tem maior probabilidade de acertos em relação ao Modelo 1.
+
+Dada a finalidade da solução (aplicação real em programas de monitoramento), o melhor modelo a ser usado é o Modelo 2, pois com maior complexidade e performance no treino e teste, este possui maior potencial para uso em datasets volumosos, que podem mais facilmente serem encontrados em uma aplicação no mundo real.
+
+---
+
 # Tecnologias Utilizadas
 
 * Python 3
@@ -97,8 +114,10 @@ O dataset foi dividido em:
 
 As imagens foram organizadas em duas classes:
 
-* Fumaca
-* Nuvens
+* Fumaca | 4 imagens de teste, 4 de validação e  7 de treino
+* Nuvens | 4 imagens de teste, 4 de validação e 7 de treino
+
+Optamos por utilizar um dataset mais simplificado, por ser um projeto de validação da ideia proposta. Focamos em escolher imagens de nuvens diversificadas e imagens de fumaça mais semelhantes entre si, pois consideramos essa estratégia com maior potencial de facilitar para o modelo identificar o que é fumaça do que não é.
 
 ---
 
@@ -252,23 +271,6 @@ Foram comparados:
 * Comportamento durante as épocas
 
 A comparação permitiu avaliar como o aumento da profundidade da rede influenciou o desempenho e a capacidade de generalização.
-
----
-
-# Resultados Obtidos
-
-Observou-se que no conjunto de teste:
-
-* Modelo 1 atingiu 92,85% de acurácia e 24% de loss.
-* Modelo 2 atingiu 100% de acurácia e 0,03% de loss.
-
-Nossa equipe avalia que tais modelos sofreram propensão a Overfitting, pois comparando com os dados de validação e teste com imagens novas, a acurácia de ambos os modelos caiu e o loss aumentou.
-
-Como explicação para isso, concluiu-se que isso se deve muito ao dataset utilizado, que não possui grande quantidade de imagens. Também considerou-se que a disparidade dos resultados se deu pela grande semelhança entre imagens de núvens e fumaça, dificultando a compreensão real do modelo acerca do que consiste uma núvem e uma fumaça.
-
-Apesar disso, consideramos que o Modelo 2 tem maior probabilidade de acertos em relação ao Modelo 1, o que se explica pela sua maior capacidade de extrair características das imagens fornecidas e maior quantidade de camadas da rede neural.
-
-Dada a finalidade da solução (aplicação real em programas de monitoramento), o melhor modelo a ser usado é o Modelo 2, pois com maior complexidade e performance no treino e teste, este possui maior potencial para uso em datasets volumosos, que podem mais facilmente serem encontrados em uma aplicação no mundo real.
 
 ---
 
