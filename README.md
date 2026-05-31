@@ -41,7 +41,7 @@ O objetivo é avaliar a viabilidade e o desempenho de diferentes arquiteturas de
 
 Segue o link para o vídeo de demonstração funcional:
 
-[https://www.youtube.com/watch?v=V-Qd_btoZtw](https://www.youtube.com/watch?v=V-Qd_btoZtw)
+[https://www.youtube.com/watch?v=IzCLEdXKS1Q](https://www.youtube.com/watch?v=IzCLEdXKS1Q)
 
 ---
 
@@ -49,16 +49,16 @@ Segue o link para o vídeo de demonstração funcional:
 
 Ao realizarmos a execução do projeto, observamos que no conjunto de teste:
 
-* Modelo 1 atingiu 92,85% de acurácia e 30,65% de loss.
-* Modelo 2 atingiu 92,85% de acurácia e 23,89% de loss.
+* Modelo 1 atingiu 92,85% de acurácia e 0.3065 de loss.
+* Modelo 2 atingiu 92,85% de acurácia e 0.2389 de loss.
 
-Nossa equipe avalia que tais modelos sofreram propensão a Overfitting, pois comparando com os dados de validação e teste com imagens novas, a acurácia de ambos os modelos caiu e o loss aumentou.
+Os resultados sugerem uma tendência ao overfitting, uma vez que o desempenho observado durante o treinamento foi superior ao obtido nos conjuntos de validação e teste. Essa diferença pode estar relacionada à quantidade limitada de imagens disponíveis e à elevada semelhança visual entre as classes "Fumaça" e "Nuvens", o que dificulta a generalização do modelo para novas amostras.
 
-Como explicação para isso, concluiu-se que isso se deve muito ao dataset utilizado, que não possui grande quantidade de imagens. Também considerou-se que a disparidade dos resultados se deu pela grande semelhança entre imagens de núvens e fumaça, dificultando a compreensão real do modelo acerca do que consiste uma núvem e uma fumaça.
+Embora ambos os modelos tenham alcançado a mesma acurácia no conjunto de teste, o Modelo 2 apresentou menor loss, indicando previsões mais consistentes e maior confiança estatística nas classificações realizadas.
 
-Apesar de no conjunto de treino ambos os modelos terem tido a mesma acurácia, no conjunto de teste com novas imagens o M2 obteve uma acurácia maior do que o M1. Por causa disso, consideramos que o Modelo 2 tem maior probabilidade de acertos em relação ao Modelo 1.
+Dessa forma, o Modelo 2 foi selecionado como a melhor arquitetura desenvolvida neste projeto. Sua maior capacidade de representação permite capturar padrões visuais mais complexos, característica que pode ser especialmente relevante em cenários reais de monitoramento ambiental por satélites, nos quais há maior diversidade e volume de dados.
 
-Dada a finalidade da solução (aplicação real em programas de monitoramento), o melhor modelo a ser usado é o Modelo 2, pois com maior complexidade e performance no treino e teste, este possui maior potencial para uso em datasets volumosos, que podem mais facilmente serem encontrados em uma aplicação no mundo real.
+Como trabalhos futuros, recomenda-se a ampliação do dataset, a inclusão de novas classes ambientais e a realização de experimentos com arquiteturas mais avançadas, visando aumentar ainda mais a capacidade de generalização do sistema.
 
 ---
 
