@@ -1,6 +1,5 @@
 # Global Solution 2026.1
 
----
 ## Visão Computacional Aplicada à Indústria Espacial
 ---
 
@@ -256,7 +255,7 @@ A comparação permitiu avaliar como o aumento da profundidade da rede influenci
 
 Segue o link para o vídeo de demonstração funcional:
 
-Inserir link
+[https://www.youtube.com/watch?v=V-Qd_btoZtw](https://www.youtube.com/watch?v=V-Qd_btoZtw)
 
 ---
 
